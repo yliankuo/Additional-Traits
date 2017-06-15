@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThoughtDefs>
+
+  <ThoughtDef>
+    <defName>Imprisoned</defName>
+    <workerClass>ThoughtWorker_Imprisoned</workerClass>
+	<nullifyingTraits>
+      <li>Masochist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>imprisoned</label>
+        <description>I hate being locked up.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<ThoughtDef>
+    <defName>SleptInBarracks</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+        <li>
+            <label>awful barrack</label>
+            <description>My barrack is an awful place, and I have to share it!</description>
+            <baseMoodEffect>-9</baseMoodEffect>
+        </li>
+        <li>
+            <label>dull barrack</label>
+            <description>I'm living in a dull barrack with other people.</description>
+            <baseMoodEffect>-7</baseMoodEffect>
+        </li>
+        <li>
+            <label>mediocre barrack</label>
+            <description>My barrack is mediocre, and I have to share it too. I really don't like this.</description>
+            <baseMoodEffect>-6</baseMoodEffect>
+        </li>
+        <li>
+            <label>decent barrack</label>
+            <description>My barrack is decent, but I really dislike sharing a sleeping space.</description>
+            <baseMoodEffect>-5</baseMoodEffect>
+        </li>
+        <li>
+            <label>slightly impressive barrack</label>
+            <description>My barrack is a nice place. But I really don't like sharing a room with others.</description>
+            <baseMoodEffect>-4</baseMoodEffect>
+        </li>
+        <li>
+            <label>impressive barrack</label>
+            <description>My barrack is impressive. It sucks that I have to share it, though.</description>
+            <baseMoodEffect>-3</baseMoodEffect>
+        </li>
+        <li>
+            <label>very impressive barrack</label>
+            <description>My barrack is very impressive. I'm annoyed I have to share it, though.</description>
+            <baseMoodEffect>-2</baseMoodEffect>
+        </li>
+        <li>
+            <label>extremely impressive barrack</label>
+            <description>My barrack is extremely impressive. It almost makes up for having to share it.</description>
+            <baseMoodEffect>-1</baseMoodEffect>
+        </li>
+        <li>
+            <label>unbelievably impressive barrack</label>
+            <description>My barrack is unbelievably impressive. I don't even mind sharing it.</description>
+            <baseMoodEffect>1</baseMoodEffect>
+        </li>
+        <li>
+            <label>wondrously impressive barrack</label>
+            <description>My barrack is the best place one can ever imagine. It makes me happy, even sharing it.</description>
+            <baseMoodEffect>2</baseMoodEffect>
+        </li>
+    </stages>
+</ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SharedBed</defName>
+    <thoughtClass>Thought_SharedBed</thoughtClass>
+    <workerClass>ThoughtWorker_SharedBed</workerClass>
+	<nullifyingTraits>
+      <li>Pervert</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>sharing bed</label>
+        <description>I have to share a bed with someone who I don't particularly want to.</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>ColonistLeftUnburied</defName>
+    <workerClass>ThoughtWorker_ColonistLeftUnburied</workerClass>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+	  <li>ColdHearted</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>colonist left unburied</label>
+        <description>One of us died and we're just leaving them lying in the open. Nobody should be left like that. People deserve a decent burial.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>Naked</defName>
+    <workerClass>ThoughtWorker_PsychologicallyNude</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+	  <li>Pervert</li>
+      <li>Nudist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>naked</label>
+        <description>I'm naked. This is humiliating.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Pain</defName>
+    <workerClass>ThoughtWorker_Pain</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Masochist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>in a little pain</label>
+        <description>Ow... That hurts.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>in a moderate amount of pain</label>
+        <description>Ughhh... When will it end?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>experiencing acute pain</label>
+        <description>Make it stop... make it stop... make it stop...</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+      <li>
+        <label>in shock from exceptional pain</label>
+        <description>AAAAAHHH! Kill me now!</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</ThoughtDefs>
